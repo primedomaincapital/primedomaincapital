@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Prime Domain Capital</title>
+<meta name="description" content="Twenty-five category-defining .com domains across capital markets, wealth technology, AI, energy, price intelligence, and consumer. Each available for acquisition at a fixed price.">
+<link rel="canonical" href="https://primedomaincapital.com/portfolio.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Prime Domain Capital">
+<meta property="og:url" content="https://primedomaincapital.com/portfolio.html">
+<meta property="og:title" content="Portfolio — Prime Domain Capital">
+<meta property="og:description" content="Twenty-five category-defining .com domains, each available for acquisition at a fixed price.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Portfolio — Prime Domain Capital">
+<meta name="twitter:description" content="Twenty-five category-defining .com domains available for acquisition.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#faf9f6; --paper-2:#f3f1ea; --ink:#191817; --ink-soft:#3d3b37;
+  --muted:#7a766d; --line:#e4e0d4; --line-dark:#2c2a26;
+  --bronze:#96742e; --bronze-soft:#c8ab63; --charcoal:#131210;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+.serif{font-family:var(--serif)}
+.eyebrow{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--bronze);margin-bottom:22px}
+/* header */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(250,249,246,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:baseline;gap:14px}
+.brand-mark{font-family:var(--serif);font-weight:700;font-size:23px;color:var(--ink)}
+.brand-mark em{font-style:normal;color:var(--bronze)}
+.brand-sub{font-size:9px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:34px}
+.nav>div{position:relative}
+.nav a.nav-link{font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding:10px 0}
+.nav a.nav-link:hover,.nav a.nav-link.active{color:var(--bronze)}
+.dropdown{position:absolute;top:100%;left:-18px;min-width:250px;background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(20,18,14,.14);opacity:0;visibility:hidden;transform:translateY(10px);transition:all .28s ease;padding:10px 0}
+.nav>div:hover .dropdown,.nav>div:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown a{display:block;padding:11px 22px;font-size:14px;color:var(--ink-soft)}
+.dropdown a:hover{background:var(--paper-2);color:var(--bronze)}
+.dropdown a span{display:block;font-size:11.5px;color:var(--muted);margin-top:2px}
+.nav-cta{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--bronze);color:var(--bronze);padding:12px 24px;transition:all .3s}
+.nav-cta:hover{background:var(--bronze);color:#fff}
+.hamburger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:26px;height:2px;background:var(--ink);margin:6px 0}
+/* page head */
+.page-head{padding:180px 0 70px;border-bottom:1px solid var(--line)}
+.page-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,6vw,76px);line-height:1.06;margin-bottom:24px}
+.page-head h1 em{font-style:italic;color:var(--bronze)}
+.page-head p{color:var(--muted);font-size:18px;max-width:620px}
+.page-head .count{margin-top:32px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);font-weight:600}
+/* catalogue */
+.catalogue{padding:20px 0 100px}
+.lot-cat{margin-top:90px}
+.lot-cat-head{display:flex;align-items:baseline;gap:28px;margin-bottom:12px;flex-wrap:wrap}
+.lot-cat-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.2vw,40px)}
+.lot-cat-head .n{font-size:13px;letter-spacing:.2em;color:var(--bronze);font-weight:600;text-transform:uppercase}
+.lot-cat-sub{color:var(--muted);font-size:15.5px;margin-bottom:36px;max-width:680px}
+.lot{display:grid;grid-template-columns:90px 1fr auto;gap:28px;align-items:baseline;padding:26px 12px;border-top:1px solid var(--line);transition:background .2s}
+.lot:last-child{border-bottom:1px solid var(--line)}
+.lot:hover{background:#fff}
+.lot-no{font-family:var(--serif);font-size:15px;color:var(--faint,var(--muted));letter-spacing:.12em}
+.lot-main a.domain{font-family:var(--serif);font-size:clamp(21px,2.4vw,28px);font-weight:600;display:inline-block;margin-bottom:6px}
+.lot-main a.domain:hover{color:var(--bronze)}
+.lot-main p{font-size:14.5px;color:var(--muted);max-width:560px}
+.lot-price{text-align:right;white-space:nowrap}
+.lot-price b{font-family:var(--serif);font-size:24px;font-weight:600;display:block}
+.lot-price span{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze)}
+/* interlude image */
+.interlude{margin:110px 0 0;position:relative;height:56vh;min-height:380px;overflow:hidden}
+.interlude img{width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.interlude .cap{position:absolute;bottom:0;left:0;right:0;padding:60px 32px 34px;background:linear-gradient(transparent,rgba(10,10,9,.72));color:#fff}
+.interlude .cap p{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.6vw,30px);max-width:800px;margin:0 auto;text-align:center}
+/* terms */
+.terms{background:var(--charcoal);color:#fff;padding:110px 0;margin-top:110px}
+.terms h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.4vw,44px);margin-bottom:20px;text-align:center}
+.terms h2 em{font-style:italic;color:var(--bronze-soft)}
+.terms>p{text-align:center;color:rgba(255,255,255,.65);max-width:640px;margin:0 auto 60px}
+.terms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-dark)}
+.term{padding:44px 36px;border-left:1px solid var(--line-dark)}
+.term:first-child{border-left:0}
+.term h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:12px;color:#fff}
+.term p{font-size:14.5px;color:rgba(255,255,255,.6)}
+.terms-cta{text-align:center;margin-top:64px}
+/* footer */
+.site-footer{background:#0c0b0a;color:rgba(255,255,255,.72);padding:90px 0 40px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;margin-bottom:64px}
+.footer-brand{font-family:var(--serif);font-size:24px;font-weight:700;color:#fff;margin-bottom:16px}
+.footer-brand em{font-style:normal;color:var(--bronze-soft)}
+.footer-grid p{font-size:14.5px;color:rgba(255,255,255,.55);max-width:300px}
+.footer-h{font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze-soft);margin-bottom:22px}
+.footer-grid ul{list-style:none}
+.footer-grid ul li{margin-bottom:12px}
+.footer-grid ul a{font-size:14.5px;color:rgba(255,255,255,.66)}
+.footer-grid ul a:hover{color:#fff}
+.footer-base{border-top:1px solid var(--line-dark);padding-top:32px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.42)}
+.btn{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:17px 38px;transition:all .3s;background:var(--bronze);color:#fff;border:1px solid transparent}
+.btn:hover{background:var(--bronze-soft);transform:translateY(-2px)}
+@media(max-width:1020px){.terms-grid{grid-template-columns:1fr}.term{border-left:0;border-top:1px solid var(--line-dark)}.term:first-child{border-top:0}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){
+  .nav{display:none}.hamburger{display:block}
+  .lot{grid-template-columns:1fr;gap:8px}.lot-price{text-align:left}
+  .footer-grid{grid-template-columns:1fr}
+}
+.mobile-menu{display:none}
+@media(max-width:860px){
+  .mobile-menu.open{display:block;position:fixed;top:78px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);z-index:199;padding:12px 32px 28px;box-shadow:0 30px 60px rgba(0,0,0,.12)}
+  .mobile-menu a{display:block;padding:13px 0;font-size:15px;font-weight:500;border-bottom:1px solid var(--line);color:var(--ink)}
+  .mobile-menu a.sub{padding-left:22px;font-size:14px;color:var(--muted);font-weight:400}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Prime Domain Capital home">
+      <span class="brand-mark">P<em>DC</em></span>
+      <span class="brand-sub">Prime Domain Capital</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <div>
+        <a class="nav-link" href="about.html">About</a>
+        <div class="dropdown">
+          <a href="about.html#philosophy">Our Philosophy<span>How we select our holdings</span></a>
+          <a href="about.html#approach">Our Approach<span>Acquire, hold, sell direct</span></a>
+        </div>
+      </div>
+      <div>
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        <div class="dropdown">
+          <a href="portfolio.html#capital">Capital &amp; Credit<span>Private markets, lending, M&amp;A</span></a>
+          <a href="portfolio.html#wealthtech">Wealth Technology<span>Reporting, overlay, workflow</span></a>
+          <a href="portfolio.html#ai">Artificial Intelligence<span>Audit, agents, compute</span></a>
+          <a href="portfolio.html#energy">Energy &amp; Resources<span>Space economy, critical minerals</span></a>
+          <a href="portfolio.html#pricing">Price Intelligence<span>Category-defining pricing domains</span></a>
+          <a href="portfolio.html#consumer">Consumer Brands<span>Selective consumer assets</span></a>
+        </div>
+      </div>
+      <div>
+        <a class="nav-link" href="acquire.html">How to Acquire</a>
+        <div class="dropdown">
+          <a href="acquire.html#browse">Browse the Holdings<span>29 domains, fixed prices</span></a>
+          <a href="acquire.html#purchase">Choose Your Path<span>Afternic, Sedo, or direct</span></a>
+          <a href="acquire.html#transfer">Secure Transfer<span>Escrow.com protected closing</span></a>
+        </div>
+      </div>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="acquire.html">How to Acquire</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-head wrap">
+  <span class="eyebrow">The Collection</span>
+  <h1>Twenty-five addresses.<br><em>Each one irreplaceable.</em></h1>
+  <p>Every domain below is held for acquisition at a fixed price. When one sells, it leaves the collection permanently — there is no second copy.</p>
+  <div class="count">29 lots &middot; 7 categories &middot; fixed pricing</div>
+</section>
+
+<div class="catalogue wrap">
+
+  <div class="lot-cat" id="capital">
+    <div class="lot-cat-head"><h2>Capital &amp; Credit</h2><span class="n">2 lots</span></div>
+    <p class="lot-cat-sub">The financing layer of the private markets — where capital is raised, deployed, and reported.</p>
+    <div class="lot"><div class="lot-no">1</div><div class="lot-main"><a class="domain" href="https://privatedebtdata.com">privatedebtdata.com</a><p>The definitive address for private credit intelligence.</p></div><div class="lot-price"><b>$88,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">2</div><div class="lot-main"><a class="domain" href="https://riamergers.com">riamergers.com</a><p>Consolidation is the industry's story; this is its headline.</p></div><div class="lot-price"><b>$25,000</b><span>Buy Now</span></div></div>
+  </div>
+
+  <div class="lot-cat" id="wealthtech">
+    <div class="lot-cat-head"><h2>Wealth Technology</h2><span class="n">8 lots</span></div>
+    <p class="lot-cat-sub">The operating system of modern wealth — reporting, overlay, workflow, and the data layer beneath.</p>
+    <div class="lot"><div class="lot-no">3</div><div class="lot-main"><a class="domain" href="https://privatewealthtech.com">privatewealthtech.com</a><p>The category name for the software the wealth industry runs on.</p></div><div class="lot-price"><b>$35,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">4</div><div class="lot-main"><a class="domain" href="https://taxmanagedportfolio.com">taxmanagedportfolio.com</a><p>After-tax performance is the entire pitch. This names it.</p></div><div class="lot-price"><b>$20,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">5</div><div class="lot-main"><a class="domain" href="https://managerresearch.com">managerresearch.com</a><p>Due diligence starts with a search. Own the search.</p></div><div class="lot-price"><b>$15,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">6</div><div class="lot-main"><a class="domain" href="https://portfoliooverlay.com">portfoliooverlay.com</a><p>Tax and risk overlay, named exactly as the industry says it.</p></div><div class="lot-price"><b>$15,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">7</div><div class="lot-main"><a class="domain" href="https://familyofficereporting.com">familyofficereporting.com</a><p>The reporting standard for the world's most private capital.</p></div><div class="lot-price"><b>$15,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">8</div><div class="lot-main"><a class="domain" href="https://gulshoretrust.com">gulshoretrust.com</a><p>A trust-grade name for the Gulf Coast's wealth corridor.</p></div><div class="lot-price"><b>$15,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">9</div><div class="lot-main"><a class="domain" href="https://riaworkflow.com">riaworkflow.com</a><p>The operating backbone of the independent wealth firm.</p></div><div class="lot-price"><b>$12,500</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">10</div><div class="lot-main"><a class="domain" href="https://wealthdatalayer.com">wealthdatalayer.com</a><p>The infrastructure name beneath every wealth platform.</p></div><div class="lot-price"><b>$10,000</b><span>Buy Now</span></div></div>
+  </div>
+
+  <div class="lot-cat" id="ai">
+    <div class="lot-cat-head"><h2>Artificial Intelligence</h2><span class="n">4 lots</span></div>
+    <p class="lot-cat-sub">Governance, identity, and compute — the load-bearing names of the AI economy.</p>
+    <div class="lot"><div class="lot-no">11</div><div class="lot-main"><a class="domain" href="https://aiaudittrail.com">aiaudittrail.com</a><p>As regulation arrives, the audit trail becomes the product.</p></div><div class="lot-price"><b>$30,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">12</div><div class="lot-main"><a class="domain" href="https://agenticentitlements.com">agenticentitlements.com</a><p>Permissions for the agentic era — the identity layer of AI agents.</p></div><div class="lot-price"><b>$12,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">13</div><div class="lot-main"><a class="domain" href="https://semiconductorindex.com">semiconductorindex.com</a><p>The benchmark name for the chip economy's indices.</p></div><div class="lot-price"><b>$9,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">14</div><div class="lot-main"><a class="domain" href="https://aimodelaudits.com">aimodelaudits.com</a><p>The audit standard for the AI governance era.</p></div><div class="lot-price"><b>$19,888</b><span>Buy Now</span></div></div>
+  </div>
+
+</div>
+
+<figure class="interlude">
+  <img src="images/tower-lowangle.jpg" alt="A Manhattan tower from below" loading="lazy">
+  <div class="cap"><p>&ldquo;In every industry, one address commands disproportionate trust.&rdquo;</p></div>
+</figure>
+
+<div class="catalogue wrap">
+
+  <div class="lot-cat" id="energy">
+    <div class="lot-cat-head"><h2>Energy &amp; Resources</h2><span class="n">4 lots</span></div>
+    <p class="lot-cat-sub">The financing of what's next — orbital infrastructure, chips, and the minerals beneath them.</p>
+    <div class="lot"><div class="lot-no">15</div><div class="lot-main"><a class="domain" href="https://spaceeconomycapital.com">spaceeconomycapital.com</a><p>Capital formation for the orbital economy.</p></div><div class="lot-price"><b>$24,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">16</div><div class="lot-main"><a class="domain" href="https://semiconductorfund.com">semiconductorfund.com</a><p>The chip economy's fund name, claimed early.</p></div><div class="lot-price"><b>$16,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">17</div><div class="lot-main"><a class="domain" href="https://spaceeconomyfund.com">spaceeconomyfund.com</a><p>The fund structure for the space age.</p></div><div class="lot-price"><b>$14,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">18</div><div class="lot-main"><a class="domain" href="https://rareearthfund.com">rareearthfund.com</a><p>Critical minerals, the asset class of the energy transition.</p></div><div class="lot-price"><b>$12,888</b><span>Buy Now</span></div></div>
+  </div>
+
+  <div class="lot-cat" id="pricing">
+    <div class="lot-cat-head"><h2>Price Intelligence</h2><span class="n">6 lots</span></div>
+    <p class="lot-cat-sub">Transparency is a business model. These are its category names.</p>
+    <div class="lot"><div class="lot-no">19</div><div class="lot-main"><a class="domain" href="https://yachtpricing.com">yachtpricing.com</a><p>Price transparency for the world's most opaque luxury market.</p></div><div class="lot-price"><b>$19,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">20</div><div class="lot-main"><a class="domain" href="https://seniorcarepricing.com">seniorcarepricing.com</a><p>Cost clarity for life's most important decisions.</p></div><div class="lot-price"><b>$14,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">21</div><div class="lot-main"><a class="domain" href="https://equipmentpricing.com">equipmentpricing.com</a><p>The valuation standard for heavy equipment markets.</p></div><div class="lot-price"><b>$12,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">22</div><div class="lot-main"><a class="domain" href="https://payrollpricing.com">payrollpricing.com</a><p>The comparison name for the payroll software market.</p></div><div class="lot-price"><b>$9,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">23</div><div class="lot-main"><a class="domain" href="https://veterinarypricing.com">veterinarypricing.com</a><p>Cost transparency for the $150B+ pet care economy.</p></div><div class="lot-price"><b>$7,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">24</div><div class="lot-main"><a class="domain" href="https://whiskeyvalues.com">whiskeyvalues.com</a><p>The valuation authority for collectible whiskey.</p></div><div class="lot-price"><b>$4,888</b><span>Buy Now</span></div></div>
+  </div>
+
+  <div class="lot-cat" id="healthcare">
+    <div class="lot-cat-head"><h2>Healthcare</h2><span class="n">3 lots</span></div>
+    <p class="lot-cat-sub">Category names for the denial management economy.</p>
+    <div class="lot"><div class="lot-no">25</div><div class="lot-main"><a class="domain" href="https://hospitaldenial.com">hospitaldenial.com</a><p>The category name for hospital denial management.</p></div><div class="lot-price"><b>$7,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">26</div><div class="lot-main"><a class="domain" href="https://healthinsurancedenial.com">healthinsurancedenial.com</a><p>Patient advocacy for the insurance appeals process.</p></div><div class="lot-price"><b>$6,888</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">27</div><div class="lot-main"><a class="domain" href="https://memorycarecosts.com">memorycarecosts.com</a><p>Cost clarity for families facing memory care.</p></div><div class="lot-price"><b>$19,888</b><span>Buy Now</span></div></div>
+  </div>
+
+  <div class="lot-cat" id="consumer">
+    <div class="lot-cat-head"><h2>Consumer Brands</h2><span class="n">2 lots</span></div>
+    <p class="lot-cat-sub">Selective consumer assets with distinctive voice.</p>
+    <div class="lot"><div class="lot-no">28</div><div class="lot-main"><a class="domain" href="https://saltygent.com">saltygent.com</a><p>A brand with edge — memorable, ownable, ready.</p></div><div class="lot-price"><b>$5,000</b><span>Buy Now</span></div></div>
+    <div class="lot"><div class="lot-no">29</div><div class="lot-main"><a class="domain" href="https://thesaltygent.com">thesaltygent.com</a><p>The definitive form of a distinctive consumer brand.</p></div><div class="lot-price"><b>$3,000</b><span>Buy Now</span></div></div>
+  </div>
+
+</div>
+
+<section class="terms">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;text-align:center">Terms of Acquisition</span>
+    <h2>Fixed prices. <em>Clean transfers.</em></h2>
+    <p>Every lot is offered at the stated price — no auctions, no negotiation theater. When terms are agreed, transfer is secured through escrow and completed within days.</p>
+    <div class="terms-grid">
+      <div class="term"><h3>Fixed Pricing</h3><p>The price shown is the price. We do not run auctions or entertain lowball offers — the number reflects the asset's worth.</p></div>
+      <div class="term"><h3>Escrow Secured</h3><p>All acquisitions close through Escrow.com. Funds are verified before transfer begins; neither party carries counterparty risk.</p></div>
+      <div class="term"><h3>Confidential</h3><p>Inquiries and negotiations are held in strict confidence. Discretion is a professional obligation, not a courtesy.</p></div>
+    </div>
+    <div class="terms-cta"><a class="btn" href="contact.html">Inquire about a lot</a></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">P<em>DC</em></div>
+        <p>Prime Domain Capital is a private holder of premium internet domain names. Select holdings are available for direct acquisition.</p>
+      </div>
+      <div>
+        <div class="footer-h">Company</div>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#philosophy">Our Philosophy</a></li>
+          <li><a href="acquire.html">How to Acquire</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-h">Portfolio</div>
+        <ul>
+          <li><a href="portfolio.html#capital">Capital &amp; Credit</a></li>
+          <li><a href="portfolio.html#wealthtech">Wealth Technology</a></li>
+          <li><a href="portfolio.html#ai">Artificial Intelligence</a></li>
+          <li><a href="portfolio.html">View All 29</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-h">Contact</div>
+        <ul>
+          <li><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></li>
+          <li><a href="contact.html">Send a message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 Prime Domain Capital. All rights reserved.</span>
+      <span>All acquisitions close through Escrow.com for secure, protected transfer.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('hamburger'),m=document.getElementById('mobileMenu');
+  b.addEventListener('click',function(){m.classList.toggle('open');});
+})();
+</script>
+</body>
+</html>
