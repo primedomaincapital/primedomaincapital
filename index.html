@@ -53,8 +53,9 @@ img{display:block;max-width:100%}
 .hero-stats{display:flex;gap:0;margin-top:64px;border-top:1px solid var(--line);max-width:1080px}
 .stat{flex:1;padding:30px 34px 6px 0}
 .stat+.stat{border-left:1px solid var(--line);padding-left:34px}
-.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(58px,5.8vw,88px);color:#fff;line-height:1}
-.stat b .count{font-size:clamp(43px,4.3vw,66px)!important;display:inline!important;margin-top:0;letter-spacing:0;text-transform:none;color:#fff!important}
+.stat-num{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(43px,4.3vw,66px);color:#fff;line-height:1}
+.stat-num .stat-dollar{font-size:clamp(58px,5.8vw,88px)}
+.stat-num .count{font-size:clamp(43px,4.3vw,66px)}
 .stat span{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a49c8e;display:block;margin-top:14px}
 .scroll-hint{position:absolute;right:48px;bottom:110px;z-index:2;writing-mode:vertical-rl;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#8d8578;display:flex;align-items:center;gap:14px}
 .scroll-hint::after{content:'';width:1px;height:64px;background:linear-gradient(var(--bronze),transparent);animation:drop 2.2s ease-in-out infinite}
@@ -178,9 +179,9 @@ footer{border-top:1px solid var(--line);padding:70px 48px 40px;max-width:1360px;
     <h1 class="rv rv-d1">We own the addresses<br>where <em>industries happen.</em></h1>
     <p class="hero-sub rv rv-d2">Forty-seven category-defining .com domains — held privately, offered publicly, each at a single fixed price. No auctions. No brokers. No noise.</p>
     <div class="hero-stats rv rv-d3">
-      <div class="stat"><b><span class="count" data-target="47">0</span></b><span>Premium domains held</span></div>
-      <div class="stat"><b>$<span class="count" data-target="807356" data-format="k">0</span></b><span>Combined listed value</span></div>
-      <div class="stat"><b><span class="count" data-target="8">0</span></b><span>Market categories</span></div>
+      <div class="stat"><div class="stat-num count" data-target="47">0</div><span>Premium domains held</span></div>
+      <div class="stat"><div class="stat-num"><span class="stat-dollar">$</span><span class="count" data-target="807356" data-format="k">0</span></div><span>Combined listed value</span></div>
+      <div class="stat"><div class="stat-num count" data-target="8">0</div><span>Market categories</span></div>
     </div>
   </div>
   <div class="scroll-hint">Scroll</div>
