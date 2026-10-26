@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://primedomaincapital.com/sitemap.xml
