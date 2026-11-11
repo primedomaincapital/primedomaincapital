@@ -57,7 +57,7 @@ img{display:block;max-width:100%}
 .stat-num{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(43px,4.3vw,66px);color:#fff;line-height:1}
 .stat-num .stat-dollar{font-size:clamp(58px,5.8vw,88px)}
 .stat-num .count{font-size:clamp(43px,4.3vw,66px)}
-.stat span{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a49c8e;display:block;margin-top:14px}
+.stat>span{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#a49c8e;display:block;margin-top:14px}
 .scroll-hint{position:absolute;right:48px;bottom:110px;z-index:2;writing-mode:vertical-rl;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#8d8578;display:flex;align-items:center;gap:14px}
 .scroll-hint::after{content:'';width:1px;height:64px;background:linear-gradient(var(--bronze),transparent);animation:drop 2.2s ease-in-out infinite}
 @keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
@@ -181,7 +181,7 @@ footer{border-top:1px solid var(--line);padding:70px 48px 40px;max-width:1360px;
     <p class="hero-sub rv rv-d2">Seventy-Two Category-Defining .com domains — held privately, offered publicly, each at a single fixed price. No auctions. No brokers. No noise.</p>
     <div class="hero-stats rv rv-d3">
       <div class="stat"><div class="stat-num count" data-target="72">0</div><span>Premium domains held</span></div>
-      <div class="stat"><div class="stat-num"><span class="stat-dollar">$</span><span class="count" data-target="1107340" data-format="k">0</span></div><span>Combined listed value</span></div>
+      <div class="stat"><div class="stat-num"><span class="stat-dollar">$</span><span class="count" data-target="1107340" data-format="m">0</span></div><span>Combined listed value</span></div>
       <div class="stat"><div class="stat-num count" data-target="8">0</div><span>Market categories</span></div>
     </div>
   </div>
@@ -340,7 +340,7 @@ const cio=new IntersectionObserver(es=>es.forEach(e=>{
   (function tick(t){
     const p=Math.min((t-t0)/dur,1),e2=1-Math.pow(1-p,3);
     let v=Math.round(target*e2);
-    el.textContent=fmt==='k'?(v>=1000?Math.round(v/1000)+'K':v):v.toLocaleString();
+    el.textContent=fmt==='k'?(v>=1000?Math.round(v/1000)+'K':v):fmt==='m'?(v/1000000).toFixed(2)+'M':v.toLocaleString();
     if(p<1)requestAnimationFrame(tick);
   })(t0);
 }),{threshold:.4});
